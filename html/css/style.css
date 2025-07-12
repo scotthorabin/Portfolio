@@ -196,3 +196,46 @@ a:hover {
     display: flex;
     justify-content: right;
   }
+
+  /* My Skills */
+
+  .skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+
+  .skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skills-section .lang {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skills-section .lang .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 10px;
+  
+  }
+
+  .skills-section .lang img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
