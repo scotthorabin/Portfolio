@@ -9,103 +9,110 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
 </head>
-<body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <a href="/html/index.html">Scott Horabin</a>
+<body class="preload">
+  <!-- Loader -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <span class="loader-inner"></span>
     </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="/html/project.html">Projects</a></li>
-          <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopenernoreferrer">
-            <i class="fa-brands fa-github"></i>
-            <span>Github</span>
-          </a></li>
-          <li><a href="scotthorabin@outlook.com">
-            <i class="fa-solid fa-square-envelope"></i>
-            Email</a></li>
-        </ul>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo"><a href="/html/index.html">Scott Horabin</a></div>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="/html/project.html">Projects</a></li>
+      <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i> <span>Github</span>
+      </a></li>
+      <li><a href="mailto:scotthorabin@outlook.com">
+        <i class="fa-solid fa-square-envelope"></i> Email
+      </a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Scott Horabin</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Scott Horabin</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopenernoreferrer">
-            <i class="fa-brands fa-github"></i>
-            <span>Github</span>
-          </a></li>
-          <li><a href="scotthorabin@outlook.com">
-            <i class="fa-solid fa-square-envelope"></i>
-            Email</a></li>
-        </div>
+      <ul class="menu-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> <span>Github</span>
+        </a></li>
+        <li><a href="mailto:scotthorabin@outlook.com">
+          <i class="fa-solid fa-square-envelope"></i> Email
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section class="me-section">
+    <div class="text">
+      <h2>Hello, I'm Scott</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, commodi atque at illum inventore placeat ratione animi?</p>
+      <div class="links">
+        <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+        <a href="#testimony"><i class="fa-solid fa-pen-to-square"></i><span>Testimony</span></a>
+        <a href="#contact"><i class="fa-solid fa-square-envelope"></i><span>Contact</span></a>
       </div>
-    </nav>
-    <!-- About me -->
-     <section class="me-section">
-      <div class="text">
-        <h2>Hello, I'm Scott </h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          Dolorum, commodi atque at illum inventore placeat ratione animi? A reiciendis mollitia sed fugiat, 
-          omnis non, ab quia quibusdam corporis enim labore.</p>
+    </div>
+    <div class="photo">
+      <img src="img/scott.jpeg" alt="Scott Horabin">
+    </div>
+  </section>
 
-          <div class="links">
-            <a href="skills">
-              <i class="fa-solid fa-code"></i>
-              <span>Skills</span>
-            </a>
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto corporis ratione.</p>
+    <div class="lang">
+      <div class="cell"><img src="/html/img/HTML5_Logo.png" alt="HTML"><span>HTML</span></div>
+      <div class="cell"><img src="/html/img/Javascript logo.png" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="cell"><img src="/html/img/data_analytics.png" alt="Data Analytics"><span>Data Analytics</span></div>
+      <div class="cell"><img src="/html/img/data_analytics.png" alt="Machine Learning"><span>Machine Learning</span></div>
+    </div>
+  </section>
 
-            <a href="#testimony">
-              <i class="fa-solid fa-pen-to-square"></i>
-              <span>Testimony</span>
-            </a>
+  <!--Projects-->
 
-            <a href="contact">
-              <i class="fa-solid fa-square-envelope"></i>
-              <span>Contact</span>
-            </a>
-          </div>
-      </div>
-
-      <div class="photo">
-        <img src="img/scott.jpeg" alt="photo of Scott Horabin">
-      </div>
-     </section>
-
-     <!--My Skills -->
-     <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Doloremque architecto corporis ratione, numquam voluptatibus natus recusandae temporibus deserunt, 
-        ea eius facilis aperiam earum exercitationem esse pariatur fugiat quae cupiditate. Facere?
-      </div>
-
-      <div class="lang">
-        <div class="cell">
-          <img src="/html/img/HTML5_Logo.png" alt="html logo">
-          <span>HTML</span>
+    <div class="container">
+        <div class="project">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
+            <h3>Producto 1</h3>
+            <p>Descripción del producto con detalles importantes.</p>
+            <button>Comprar</button>
         </div>
 
-        <div class="cell">
-          <img src="/html/img/Javascript logo.png" alt="javascript logo">
-          <span>Javascript</span>
+        <div class="project">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
+            <h3>Producto 2</h3>
+            <p>Descripción del producto con detalles importantes.</p>
+            <button>Comprar</button>
         </div>
 
-        <div class="cell">
-          <img src="/html/img/data_analytics.png" alt="data analytics logo">
-          <span>Data Analytics</span>
+        <div class="project">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
+            <h3>Producto 3</h3>
+            <p>Descripción del producto con detalles importantes.</p>
+            <button>Comprar</button>
         </div>
-      </div>
-     </section>
-    <script src="JS/script.js"></script>
+    </div>
+
+  <!-- Scripts -->
+  <script src="JS/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
