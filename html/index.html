@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/media.css" />
 </head>
 <body class="preload">
+  
   <!-- Loader -->
   <div class="loader-wrapper" id="loader">
     <div class="loader">
@@ -82,28 +83,36 @@
 
   <!--Projects-->
 
-    <div class="container">
-        <div class="project">
-            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
-            <h3>Producto 1</h3>
-            <p>Descripción del producto con detalles importantes.</p>
-            <button>Comprar</button>
-        </div>
+<section id="projects" class="projects-section">
+  <h2>Projects</h2>
 
-        <div class="project">
-            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
-            <h3>Producto 2</h3>
-            <p>Descripción del producto con detalles importantes.</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="project">
-            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" alt="Producto">
-            <h3>Producto 3</h3>
-            <p>Descripción del producto con detalles importantes.</p>
-            <button>Comprar</button>
-        </div>
+  <!-- Project 1  (image left, text right) -->
+  <div class="project-row">
+    <div class="project-media">
+      <img src="/html/img/project1.jpg" alt="Screenshot of Project 1">
     </div>
+    <div class="project-copy">
+      <h3>Project Title 1</h3>
+      <p>Brief description of what this project does and the tech you used.</p>
+      <a href="#" target="_blank" class="project-link">View Project</a>
+    </div>
+  </div>
+
+  <!-- Project 2  (image right, text left) -->
+  <div class="project-row reverse">
+    <div class="project-media">
+      <img src="/html/img/project2.jpg" alt="Screenshot of Project 2">
+    </div>
+    <div class="project-copy">
+      <h3>Project Title 2</h3>
+      <p>Brief description of what this project does and the tech you used.</p>
+      <a href="#" target="_blank" class="project-link">View Project</a>
+    </div>
+  </div>
+
+  <!-- Duplicate the pattern, alternating .reverse on every other row -->
+</section>
+
 
   <!-- Scripts -->
   <script src="JS/script.js"></script>

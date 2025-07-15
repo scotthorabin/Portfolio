@@ -240,15 +240,8 @@ a:hover {
     border-radius: 2px;
   }
 
+  
   /* Projects */
-
-.titulo-pagina {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 0 130px 0; /* Esto quita el margen superior y mantiene 20px abajo */
-  padding-top: 0;
-  color: #e0e0e0;
-}
 
 .container {
   display: grid;
@@ -260,61 +253,75 @@ a:hover {
 }
 
 
-/* El resto de tu CSS permanece igual */
-.project {
-    container-type: inline-size;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+/* Section styling — keep / tweak as you wish */
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
-.project img {
-    width: 100%;
-    border-radius: 8px;
-    max-height: 150px;
-    object-fit: cover;
+/* Core two‑column layout */
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 3rem;
+  margin-top: 6rem;   /* extra space above each project */
+  margin-bottom: 6rem;
 }
 
-.project h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #333;
+/* Swap order when .reverse is present */
+.project-row.reverse {
+  flex-direction: row-reverse;
 }
 
-.project p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 10px;
+/* Image / media wrapper */
+.project-media {
+  flex: 1 1 50%;
+  min-width: 240px;
+  max-width: 500px;
 }
 
-.project button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+.project-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.project button:hover {
-    background: #0056b3;
+/* Text column */
+.project-copy {
+  flex: 1 1 50%;
 }
 
-@container (max-width: 220px) {
-    .project p {
-        display: none;
-    }
-    .project h3 {
-        font-size: 1rem;
-    }
+.project-copy h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 
-@container (max-width: 180px) {
-    .project button {
-        display: none;
-    }
+.project-copy p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.2rem;
 }
+
+.project-link {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* —— Responsive tweaks —— */
+@media (max-width: 768px) {
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;          /* Stack on small screens */
+  }
+}
+
