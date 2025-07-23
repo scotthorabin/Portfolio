@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+}
+
+ .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.8s ease;
+    }
+    .loader-wrapper.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loader {
+      width: 30px;
+      height: 30px;
+      border: 4px solid #252525;
+      animation: loader 1.5s infinite ease;
+      position: relative;
+    }
+    .loader-inner {
+      display: inline-block;
+      width: 100%;
+      height: 0%;
+      background: #252525;
+      animation: loader-inner 1.5s infinite ease-in;
+    }
+    @keyframes loader {
+      0%   { transform: rotate(0deg);   }
+      25%  { transform: rotate(180deg); }
+      50%  { transform: rotate(180deg); }
+      75%  { transform: rotate(360deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes loader-inner {
+      0%,25%,100% { height: 0%;   }
+      50%,75%     { height: 100%; }
+    }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+<body class="preload">
+  
+  <!-- Loader -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <span class="loader-inner"></span>
+    </div>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo"><a href="/html/index.html">Scott Horabin</a></div>
+    <ul class="nav-links">
+      <li><a href="#projects">
+        <i class="fa-solid fa-code-commit"></i> <span>Projects</span>
+      </a></li>
+      <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i> <span>Github</span>
+      </a></li>
+      <li><a href="mailto:scotthorabin@outlook.com">
+        <i class="fa-solid fa-square-envelope"></i> Email
+      </a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Scott Horabin</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> <span>Github</span>
+        </a></li>
+        <li><a href="mailto:scotthorabin@outlook.com">
+          <i class="fa-solid fa-square-envelope"></i> Email
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section class="me-section">
+    <div class="text">
+      <h2>Hello, I'm Scott</h2>
+      <div class="me">
+      <p>Greetings, I'm Scott, a passionate tech enthusiast and software developer based in Chester, UK.
+        <br> <br>
+        With recently receiving a BSc in Computer Science, I was able to hone my abilities in system design, data analysis, and software development
+        whilst working on a variety of projects during my time in college, both alone and with others, which challenged my imagination and advanced my development skills.</p>
+        </div>
+        <div class="links">
+        <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+        <a href="#contact"><i class="fa-solid fa-square-envelope"></i><span>Contact</span></a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="img/scott.jpeg" alt="Scott Horabin">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <p class="text">A collection of skills I've developed through university projects and self-directed learning.</p>
+     <div class="lang">
+      <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/HTML5_Logo.png" alt="HTML (Author of Image - Pixel Perfect)">
+         <span>HTML</span>
+           <p class="description">HTML was used early on throughout my experience of university. It encouraged me to build accessible, well structured websites and layouts.</p>
+            </div>
+
+           <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/css-3.png" alt="CSS (Author of Image - Pixel Perfect)">
+         <span>CSS</span>
+           <p class="description">CSS was used to bring the content from HTML to life. I learn't this during my first year of university and continued to refine my 
+            skills through projects outside of university.</p>
+            </div>
+
+           <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/Javascript logo.png" alt="JavaScript (Author of Image - Freepik)">
+         <span>JavaScript</span>
+           <p class="description">For web applications, I used JavaScript to build interactive features such as form validations and content updates.</p>
+            </div>
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/java.png" alt="Java (Author of Image - Freepik)">
+         <span>Java</span>
+           <p class="description">Java was the first language I learn't in depth. I was able to use the foundations to build a music library app (see Github for more).</p>
+            </div>
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/kotlin.png" alt="Kotlin (Author of Image - Muhammad Andy)">
+         <span>Kotlin</span>
+           <p class="description">Kotlin was a key skill I learn't through university when building my own android application.</p>
+            </div>
+
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/scripting.png" alt="X Code (Author of Image - HAJICON)">
+         <span>X Code</span>
+           <p class="description">X Code was the most recent language that I learn't. It provided a detailed explanation of how Apple develop their applications.</p>
+            </div>
+
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/sql-server.png" alt="SQL (Author of Image - Pixel Perfect)">
+         <span>SQL</span>
+           <p class="description">Used SQL extensively during university to design relational databases, write complex queries, and manage data efficiently for academic and personal projects.</p>
+            </div>
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/c-sharp.png" alt="C# (Author of Image - Freepik)">
+         <span>C#</span>
+           <p class="description">Worked with C# in Visual Studio to build backend for desktop and web apps, gaining experience in object-oriented programming.</p>
+            </div>
+
+             <div class="cell" onclick="toggleDescription(this)">
+       <img src="/img/github.png" alt="GitHub (Author of Image - Pixel Perfect)">
+         <span>Github</span>
+           <p class="description">Used Github to create and commit to multiple branches throughout my projects to ensure backup and growth of the project.</p>
+            </div>
+    </div>
+  </section>
+
+  <!--Projects-->
+
+<section id="projects" class="projects-section">
+  <h2>Projects</h2>
+
+<!-- Project 1 (image grid on the left, text on the right) -->
+<div class="project-row" id="projects">
+  <div class="project-media project-gallery">
+    <img src="/img/ERD.png" alt="Screenshot 2" class="zoomable">
+    <img src="/img/Achievements.png" alt="Screenshot 3" class="zoomable">
+  </div>
+
+  <div class="project-copy">
+    <h3>Dissertation Project </h3>
+    <p>This project was designed, developed and tested for my dissertation project in university.
+      <br><br>
+      The hypothesis for this project was to examine the effectiveness of gamification in educational materials for undergraduate computing students with earlier research indicating that learning computer programming is difficult and may lead to high dropout rate (Dirzyte et al, 2023).
+      <br><br>
+      Software such as Figma, Miro, Visual Studio and SQL were used to design the fundamental layout and features and to store data from users and track their achievements.
+    </p>
+    <a href="https://github.com/scotthorabin/ImplementationProject" target="_blank" class="project-link">View Project</a>
+    <a href="/img/Implementation Video.mp4" target="_blank" class="project-link2" >Watch Demo</a>
+  </div>
+</div>
+
+
+<!-- Project 2 (image right, text left) -->
+<div class="project-row reverse">
+  <div class="project-media">
+    <img src="/img/Index page.png" alt="Index page for project" class="zoomable">
+    <img src="/img/new topic.png" alt="Topic page for project" class="zoomable">
+  </div>
+  <div class="project-copy">
+    <h3>Project Management System </h3>
+    <p>As part of a group project at university, we developed a web application that allowed students to submit and rank their dissertation topic preferences, from most to least preferred. 
+      <br> <br>The platform aimed to streamline the topic selection process for both students and academic staff. I contributed to both the design and development phases, using Figma to create user-friendly interface mockups, Visual Studio Code for front-end implementation, and Visual Studio for back-end development. 
+      <br> <br> This project was able to strengthen my skills in collaborative development, UI/UX design, and full-stack web technologies.</p>
+    <a href="https://github.com/scotthorabin/Project-Management-System" target="_blank" class="project-link">View Project</a>
+  </div>
+</div>
+
+
+
+  <!-- Scripts -->
+  <script src="JS/script.js"></script>
+</body>
+
+<footer id="contact" class="footer">
+  <div class="footer-content">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email or check out my work on GitHub.</p>
+    <div class="footer-links">
+      <a href="mailto:scotthorabin@outlook.com"><i class="fa-solid fa-envelope"></i> scotthorabin@outlook.com</a>
+      <a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+    <p class="footer-credit">© 2025 Scott Horabin. All rights reserved.</p>
+  </div>
+</footer>
+</html>
+
+
+
+
+
+
+
