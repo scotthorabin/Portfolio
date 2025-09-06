@@ -19,6 +19,9 @@ window.addEventListener('load', () => {
   }, 1000);
 });
 
+
+/* Function for text effect */
+
 function image() {
   document.querySelectorAll('.zoomable').forEach(img => {
     img.addEventListener('click', () => {
@@ -30,3 +33,33 @@ function image() {
  function toggleDescription(cell) {
     cell.classList.toggle("active");
   }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "Hello and welcome to my portfolio!";
+  const target = document.getElementById("typing-text");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      target.innerHTML += text[index];
+      index++;
+      setTimeout(type, 100); // Typing speed (in ms)
+    }
+  }
+
+  type();
+});
+
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu-links');
+    const icon = document.querySelector('.hamburger-icon');
+    
+    menu.classList.toggle('open');  // Toggle the menu visibility
+    icon.classList.toggle('open');  // Toggle the hamburger icon to "X"
+  }
+
+
+
+
+
