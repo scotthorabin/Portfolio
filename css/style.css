@@ -72,6 +72,7 @@ a:hover {
   display: none;
 }
 
+/* Hamburger icon container */
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -90,62 +91,81 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Full screen menu links */
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
+  position: fixed;   /* Fixed position to take full screen */
+  top: 0;
+  left: 0;
+  width: 100%;        /* Full width */
+  height: 100vh;      /* Full height */
+  background-color: rgba(0, 0, 0, 0.9); /* Dark transparent background */
+  display: flex;
+  flex-direction: column; /* Stack the menu items vertically */
+  justify-content: center; /* Vertically center items */
+  align-items: center;     /* Horizontally center items */
+  z-index: 9999;           /* Ensure it's on top */
+  opacity: 0;              /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for show/hide */
+  transform: translateY(-100%); /* Start from the top */
 }
 
+/* Menu links active (when open) */
+.menu-links.open {
+  opacity: 1;              /* Show the menu */
+  transform: translateY(0); /* Slide into view */
+}
+
+/* Style for each menu item */
+/* Menu Links - Larger Font Size */
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 20px 30px; /* Increased padding for more space around the text */
   text-align: center;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 2.5rem; /* Increased font size */
+  color: white; /* Ensure the text is white */
   text-decoration: none;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect for better interaction */
+.menu-links a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px; /* Optional: Adding rounded corners for a smoother effect */
+}
+
+
+/* For each list item */
 .menu-links li {
   list-style: none;
 }
 
-.menu-links.open{
-  max-height: 300px;
+/* Style for the Close Button */
+.menu-links .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-  transition: .2s;
+.menu-links .close-btn button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
+.menu-links .close-btn button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
-
- .hamburger-icon span:first-child {
-    opacity: 1;
-  }
-  
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
   
 
   /* Me Section */
@@ -544,5 +564,11 @@ a:hover {
   display: inline-block;
   animation: wave 0.9s ease-in-out infinite; /* Add wave animation */
   margin-right: 10px; /* Space between emoji and text */
+}
+
+/* Seperate images from text in about me section */
+.fa-solid {
+  font-weight: 900;
+  margin: 5px;
 }
 

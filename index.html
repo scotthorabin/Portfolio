@@ -35,7 +35,6 @@
     </ul>
   </nav>
 
-<!-- Hamburger Navigation -->
 <nav id="hamburger-nav">
   <div class="logo">Scott Horabin</div>
   <div class="hamburger-menu">
@@ -43,16 +42,24 @@
       <span></span><span></span><span></span>
     </div>
     <ul class="menu-links">
-      <li><a href="#projects">Projects</a></li>
+      <!-- Close Button -->
+      <li class="close-btn">
+        <button onclick="toggleMenu()">Close</button>
+      </li>
+      <li><a href="#projects"><i class="fa-solid fa-code-branch"></i>Projects</a></li>
       <li><a href="https://github.com/scotthorabin" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i> <span>Github</span>
       </a></li>
       <li><a href="mailto:scotthorabin@outlook.com">
         <i class="fa-solid fa-square-envelope"></i> Email
       </a></li>
+      <li><a href="#skills"><i class="fa-solid fa-brain"></i><span>Skills</span></a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> <span>Experience</span></a></li>
+      <li><a href="#contact"><i class="fa-solid fa-file-lines"></i><span>Contact</span></a></li>
     </ul>
   </div>
 </nav>
+
 
 
   <!-- About Me -->

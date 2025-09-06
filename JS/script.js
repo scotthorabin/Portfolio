@@ -1,8 +1,7 @@
+// JavaScript function to toggle the full-screen menu
 function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  const menu = document.querySelector('#hamburger-nav .menu-links');
+  menu.classList.toggle('open');  // Add/remove 'open' class to show/hide the menu
 }
 
 window.addEventListener('load', () => {
@@ -50,14 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
   type();
 });
 
-
-  function toggleMenu() {
-    const menu = document.querySelector('.menu-links');
-    const icon = document.querySelector('.hamburger-icon');
-    
-    menu.classList.toggle('open');  // Toggle the menu visibility
-    icon.classList.toggle('open');  // Toggle the hamburger icon to "X"
-  }
 
 
 
