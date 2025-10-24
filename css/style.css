@@ -440,6 +440,11 @@ a:hover {
   margin-bottom: 1.2rem;
 }
 
+.project-copy .coming-soon{
+  font-size: 40px;
+  width: 100%;
+  padding-left: 25rem;
+}
 .project-link {
   display: inline-block;
   font-weight: 600;
